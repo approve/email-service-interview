@@ -1,0 +1,24 @@
+{
+  "name": "email-service-interview",
+  "version": "1.0.0",
+  "description": "Email management service interview task",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js",
+    "test": "node --test test/**/*.test.js"
+  },
+  "author": "Michael Milstein",
+  "license": "MIT",
+  "dependencies": {
+    "lodash": "^4.17.21",
+    "uuid": "^9.0.0"
+  },
+  "devDependencies": {
+    "supertest": "^6.3.3",
+    "nodemon": "^3.1.10"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
