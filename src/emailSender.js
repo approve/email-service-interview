@@ -7,7 +7,6 @@ const { EmailStatus } = require('./constants');
 class EmailSender {
   constructor() {
     this.sentEmails = [];
-    this.failureRate = 0.1; // 10% failure rate for testing
   }
 
   /**
@@ -20,13 +19,6 @@ class EmailSender {
     
     // Simulate network delay
     await this.delay(100 + Math.random() * 200);
-
-    // Simulate occasional failures
-    if (Math.random() < this.failureRate) {
-      const error = new Error('SMTP connection failed');
-      console.error(`❌ Email sending failed: ${error.message}`);
-      throw error;
-    }
 
     // Log successful send
     const sentEmail = {
