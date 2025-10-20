@@ -3,7 +3,7 @@
 ## Task Overview
 Build a simplified email management service that can schedule and send emails with template support. This task is designed to assess your Node.js skills and system design thinking.
 
-Validate you have Node 20 installed
+Make sure you have Node 20 installed
 
 ### Core Functionality
 
@@ -20,7 +20,7 @@ Validate you have Node 20 installed
 #### Data Model
 Your email records should include:
 ```typescript
-  Email {
+ Email {
   id: string;
   emailType: string;         // Template identifier
   recipients: string[];      // Email addresses
@@ -47,7 +47,7 @@ Your email records should include:
 - Handle sending errors gracefully
 
 ### Technical Stack
-- **Node.js** with **Express.js**
+- **Node.js**
 - **In-memory storage** (arrays/objects) for simplicity
 - Standard npm packages are allowed (lodash, moment, etc.)
 
